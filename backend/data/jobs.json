@@ -1,0 +1,122 @@
+[
+  {
+    "id": "j001",
+    "title": "Frontend Developer",
+    "company": "TechCorp Solutions",
+    "description": "We are looking for a skilled frontend developer to build responsive web applications. You will work closely with our design team to implement pixel-perfect UIs and ensure cross-browser compatibility.",
+    "requiredSkills": ["React", "CSS", "JavaScript", "Git"],
+    "experienceLevel": "Mid (2-4 years)",
+    "location": "Remote",
+    "remote": true,
+    "taskRequirements": {
+      "visualMonitoring": 2,
+      "phoneCalls": 1,
+      "fineMotorInput": 4,
+      "sustainedFocus": 4,
+      "verbalCommunication": 2
+    },
+    "jobVectorId": "jv001",
+    "postedDate": "2025-01-10",
+    "accessibilityScore": null
+  },
+  {
+    "id": "j002",
+    "title": "Backend Engineer",
+    "company": "DataFlow Inc.",
+    "description": "Join our backend team to design and implement scalable APIs. You will work on microservices architecture and integrate with third-party systems. Daily standups via text chat.",
+    "requiredSkills": ["Python", "PostgreSQL", "REST APIs", "Docker"],
+    "experienceLevel": "Senior (5+ years)",
+    "location": "Remote",
+    "remote": true,
+    "taskRequirements": {
+      "visualMonitoring": 3,
+      "phoneCalls": 1,
+      "fineMotorInput": 4,
+      "sustainedFocus": 5,
+      "verbalCommunication": 1
+    },
+    "jobVectorId": "jv002",
+    "postedDate": "2025-01-12",
+    "accessibilityScore": null
+  },
+  {
+    "id": "j003",
+    "title": "UX Researcher",
+    "company": "DesignFirst Agency",
+    "description": "Conduct user research, interviews, and usability tests. You will synthesize findings into actionable insights and present to stakeholders. Requires frequent video calls and in-person sessions.",
+    "requiredSkills": ["User Testing", "Figma", "Research Methods", "Presentation"],
+    "experienceLevel": "Junior (1-3 years)",
+    "location": "Hybrid - Mumbai",
+    "remote": false,
+    "taskRequirements": {
+      "visualMonitoring": 3,
+      "phoneCalls": 5,
+      "fineMotorInput": 2,
+      "sustainedFocus": 3,
+      "verbalCommunication": 5
+    },
+    "jobVectorId": "jv003",
+    "postedDate": "2025-01-14",
+    "accessibilityScore": null
+  },
+  {
+    "id": "j004",
+    "title": "Mobile Developer (React Native)",
+    "company": "AppLaunch Studio",
+    "description": "Build and maintain cross-platform mobile applications using React Native. Async-first team — most communication is via Slack and GitHub comments. Flexible hours.",
+    "requiredSkills": ["React Native", "TypeScript", "Firebase", "Redux"],
+    "experienceLevel": "Mid (3-5 years)",
+    "location": "Remote",
+    "remote": true,
+    "taskRequirements": {
+      "visualMonitoring": 3,
+      "phoneCalls": 1,
+      "fineMotorInput": 4,
+      "sustainedFocus": 4,
+      "verbalCommunication": 1
+    },
+    "jobVectorId": "jv004",
+    "postedDate": "2025-01-15",
+    "accessibilityScore": null
+  },
+  {
+    "id": "j005",
+    "title": "DevOps / Cloud Engineer",
+    "company": "InfraScale",
+    "description": "Manage cloud infrastructure on AWS, automate CI/CD pipelines, and ensure 99.9% uptime. Fully remote role with flexible hours. Primarily written communication.",
+    "requiredSkills": ["AWS", "Terraform", "CI/CD", "Linux"],
+    "experienceLevel": "Senior (5+ years)",
+    "location": "Remote",
+    "remote": true,
+    "taskRequirements": {
+      "visualMonitoring": 4,
+      "phoneCalls": 1,
+      "fineMotorInput": 3,
+      "sustainedFocus": 5,
+      "verbalCommunication": 1
+    },
+    "jobVectorId": "jv005",
+    "postedDate": "2025-01-16",
+    "accessibilityScore": null
+  },
+  {
+    "id": "j006",
+    "title": "Java Backend Developer",
+    "company": "FinServe Technologies",
+    "description": "Develop and maintain core banking APIs using Java and Spring Boot. Work in a structured team with detailed written specifications. Screen reader compatible development environment provided.",
+    "requiredSkills": ["Java", "Spring Boot", "Microservices", "PostgreSQL"],
+    "experienceLevel": "Senior (5+ years)",
+    "location": "Remote",
+    "remote": true,
+    "taskRequirements": {
+      "visualMonitoring": 2,
+      "phoneCalls": 1,
+      "fineMotorInput": 4,
+      "sustainedFocus": 5,
+      "verbalCommunication": 1
+    },
+    "jobVectorId": "jv006",
+    "postedDate": "2025-01-17",
+    "accessibilityScore": null
+  }
+]

@@ -1,0 +1,129 @@
+[
+  {
+    "id": "cat-visual",
+    "category": "Visual",
+    "icon": "👁",
+    "description": "Disabilities affecting vision, from partial sight loss to complete blindness.",
+    "subTypes": [
+      {
+        "id": "vis-lowvision",
+        "label": "Low Vision",
+        "description": "Partial sight that cannot be fully corrected with glasses or contact lenses."
+      },
+      {
+        "id": "vis-colourblind",
+        "label": "Colour Blindness",
+        "description": "Difficulty distinguishing certain colours (most commonly red and green)."
+      },
+      {
+        "id": "vis-blind",
+        "label": "Blind",
+        "description": "No functional vision. Typically uses a screen reader and/or braille display."
+      },
+      {
+        "id": "vis-lightsen",
+        "label": "Light Sensitivity",
+        "description": "Difficulty with bright screens or environments. Requires reduced contrast or dark mode."
+      }
+    ]
+  },
+  {
+    "id": "cat-hearing",
+    "category": "Hearing",
+    "icon": "👂",
+    "description": "Disabilities affecting hearing, from partial hearing loss to complete deafness.",
+    "subTypes": [
+      {
+        "id": "hear-hoh",
+        "label": "Hard of Hearing",
+        "description": "Partial hearing loss. May use hearing aids or prefer written communication."
+      },
+      {
+        "id": "hear-deaf",
+        "label": "Deaf",
+        "description": "No functional hearing. Communicates via sign language, lip reading, or text."
+      },
+      {
+        "id": "hear-tinnitus",
+        "label": "Tinnitus",
+        "description": "Persistent ringing in the ears. May affect concentration in noisy environments."
+      },
+      {
+        "id": "hear-aud-proc",
+        "label": "Auditory Processing Disorder",
+        "description": "Difficulty processing spoken language despite normal hearing sensitivity."
+      }
+    ]
+  },
+  {
+    "id": "cat-motor",
+    "category": "Motor",
+    "icon": "🖐",
+    "description": "Disabilities affecting physical movement, dexterity, or mobility.",
+    "subTypes": [
+      {
+        "id": "motor-limhand",
+        "label": "Limited Hand Mobility",
+        "description": "Difficulty with fine motor tasks like typing. May use voice input or adapted keyboards."
+      },
+      {
+        "id": "motor-wheelchair",
+        "label": "Wheelchair User",
+        "description": "Requires wheelchair for mobility. May need accessible workspaces and routes."
+      },
+      {
+        "id": "motor-tremor",
+        "label": "Tremors",
+        "description": "Involuntary shaking affecting hands or limbs. May impact precision tasks."
+      },
+      {
+        "id": "motor-hemi",
+        "label": "Hemiplegia / One-sided Paralysis",
+        "description": "Paralysis or weakness on one side. One-handed keyboard use is common."
+      },
+      {
+        "id": "motor-chronic",
+        "label": "Chronic Pain / Fatigue",
+        "description": "Conditions like fibromyalgia or MS causing pain or energy limitations."
+      }
+    ]
+  },
+  {
+    "id": "cat-cognitive",
+    "category": "Cognitive",
+    "icon": "🧠",
+    "description": "Disabilities affecting memory, concentration, learning, or information processing.",
+    "subTypes": [
+      {
+        "id": "cog-adhd",
+        "label": "ADHD",
+        "description": "Attention Deficit Hyperactivity Disorder. Affects focus and impulse regulation."
+      },
+      {
+        "id": "cog-dyslexia",
+        "label": "Dyslexia",
+        "description": "Difficulty with reading and spelling. Processing written text may take longer."
+      },
+      {
+        "id": "cog-autism",
+        "label": "Autism Spectrum",
+        "description": "May affect social communication and sensory processing. Often excels at pattern recognition."
+      },
+      {
+        "id": "cog-memory",
+        "label": "Memory Impairment",
+        "description": "Difficulty retaining information. Benefits from written instructions and reminders."
+      },
+      {
+        "id": "cog-anxiety",
+        "label": "Anxiety Disorder",
+        "description": "Severe anxiety that may affect performance in high-pressure environments."
+      },
+      {
+        "id": "cog-dyscalculia",
+        "label": "Dyscalculia",
+        "description": "Difficulty with numbers and mathematical concepts."
+      }
+    ]
+  }
+]

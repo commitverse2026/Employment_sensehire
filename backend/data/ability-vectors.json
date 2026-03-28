@@ -1,0 +1,162 @@
+[
+  {
+    "id": "av001",
+    "candidateId": "c001",
+    "vector": [3, 4, 4, 5, 3],
+    "dimensions": {
+      "visual": 3,
+      "auditory": 4,
+      "fineMotor": 4,
+      "cognitiveLoad": 5,
+      "verbalComm": 3
+    },
+    "labels": {
+      "visual": "Can read with magnification tools",
+      "auditory": "Hears well, prefers written summaries",
+      "fineMotor": "Comfortable typing with adapted keyboard",
+      "cognitiveLoad": "Excellent focus and multitasking",
+      "verbalComm": "Comfortable in small group meetings"
+    },
+    "generatedAt": "2025-01-10T10:00:00Z"
+  },
+  {
+    "id": "av002",
+    "candidateId": "c002",
+    "vector": [4, 1, 5, 5, 1],
+    "dimensions": {
+      "visual": 4,
+      "auditory": 1,
+      "fineMotor": 5,
+      "cognitiveLoad": 5,
+      "verbalComm": 1
+    },
+    "labels": {
+      "visual": "Full visual capability",
+      "auditory": "Deaf — requires captions or text alternatives",
+      "fineMotor": "Full typing and mouse capability",
+      "cognitiveLoad": "Exceptional analytical focus",
+      "verbalComm": "Prefers text-based communication only"
+    },
+    "generatedAt": "2025-01-10T10:05:00Z"
+  },
+  {
+    "id": "av003",
+    "candidateId": "c003",
+    "vector": [4, 4, 2, 4, 3],
+    "dimensions": {
+      "visual": 4,
+      "auditory": 4,
+      "fineMotor": 2,
+      "cognitiveLoad": 4,
+      "verbalComm": 3
+    },
+    "labels": {
+      "visual": "Full visual capability",
+      "auditory": "Hears clearly",
+      "fineMotor": "Limited — uses voice commands and shortcuts",
+      "cognitiveLoad": "Strong analytical focus",
+      "verbalComm": "Can communicate verbally for short periods"
+    },
+    "generatedAt": "2025-01-10T10:10:00Z"
+  },
+  {
+    "id": "av004",
+    "candidateId": "c004",
+    "vector": [4, 4, 4, 2, 4],
+    "dimensions": {
+      "visual": 4,
+      "auditory": 4,
+      "fineMotor": 4,
+      "cognitiveLoad": 2,
+      "verbalComm": 4
+    },
+    "labels": {
+      "visual": "Full visual capability",
+      "auditory": "Hears clearly",
+      "fineMotor": "Full dexterity",
+      "cognitiveLoad": "Focus varies — needs structured tasks and breaks",
+      "verbalComm": "Articulate and confident speaker"
+    },
+    "generatedAt": "2025-01-10T10:15:00Z"
+  },
+  {
+    "id": "av005",
+    "candidateId": "c005",
+    "vector": [1, 5, 5, 5, 3],
+    "dimensions": {
+      "visual": 1,
+      "auditory": 5,
+      "fineMotor": 5,
+      "cognitiveLoad": 5,
+      "verbalComm": 3
+    },
+    "labels": {
+      "visual": "Blind — uses NVDA screen reader and braille display exclusively",
+      "auditory": "Excellent auditory processing",
+      "fineMotor": "Full keyboard proficiency",
+      "cognitiveLoad": "Exceptional memory and focus",
+      "verbalComm": "Confident in meetings with prep time"
+    },
+    "generatedAt": "2025-01-10T10:20:00Z"
+  },
+  {
+    "id": "av006",
+    "candidateId": "c006",
+    "vector": [4, 4, 5, 5, 3],
+    "dimensions": {
+      "visual": 4,
+      "auditory": 4,
+      "fineMotor": 5,
+      "cognitiveLoad": 5,
+      "verbalComm": 3
+    },
+    "labels": {
+      "visual": "Full visual capability",
+      "auditory": "Hears clearly",
+      "fineMotor": "Full keyboard and mouse capability",
+      "cognitiveLoad": "Strong systems thinking",
+      "verbalComm": "Comfortable in meetings"
+    },
+    "generatedAt": "2025-01-10T10:25:00Z"
+  },
+  {
+    "id": "av007",
+    "candidateId": "c007",
+    "vector": [4, 4, 3, 3, 4],
+    "dimensions": {
+      "visual": 4,
+      "auditory": 4,
+      "fineMotor": 3,
+      "cognitiveLoad": 3,
+      "verbalComm": 4
+    },
+    "labels": {
+      "visual": "Full visual capability",
+      "auditory": "Uses TTS for proofreading",
+      "fineMotor": "Moderate typing speed",
+      "cognitiveLoad": "Needs longer reading time for dense text",
+      "verbalComm": "Strong verbal communicator"
+    },
+    "generatedAt": "2025-01-10T10:30:00Z"
+  },
+  {
+    "id": "av008",
+    "candidateId": "c008",
+    "vector": [4, 2, 5, 5, 1],
+    "dimensions": {
+      "visual": 4,
+      "auditory": 2,
+      "fineMotor": 5,
+      "cognitiveLoad": 5,
+      "verbalComm": 1
+    },
+    "labels": {
+      "visual": "Full visual capability",
+      "auditory": "Hard of hearing — prefers captions",
+      "fineMotor": "Full typing and development capability",
+      "cognitiveLoad": "Excellent problem-solving focus",
+      "verbalComm": "Prefers async written communication"
+    },
+    "generatedAt": "2025-01-10T10:35:00Z"
+  }
+]

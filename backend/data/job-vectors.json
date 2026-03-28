@@ -1,0 +1,122 @@
+[
+  {
+    "id": "jv001",
+    "jobId": "j001",
+    "vector": [2, 1, 4, 4, 2],
+    "dimensions": {
+      "visual": 2,
+      "auditory": 1,
+      "fineMotor": 4,
+      "cognitiveLoad": 4,
+      "verbalComm": 2
+    },
+    "reasoning": {
+      "visual": "Requires reading code and design mockups — low vision tools acceptable",
+      "auditory": "No phone requirement — Slack/async communication",
+      "fineMotor": "Heavy keyboard and mouse usage daily",
+      "cognitiveLoad": "Requires sustained coding focus",
+      "verbalComm": "Occasional small team syncs"
+    },
+    "generatedAt": "2025-01-10T11:00:00Z"
+  },
+  {
+    "id": "jv002",
+    "jobId": "j002",
+    "vector": [3, 1, 4, 5, 1],
+    "dimensions": {
+      "visual": 3,
+      "auditory": 1,
+      "fineMotor": 4,
+      "cognitiveLoad": 5,
+      "verbalComm": 1
+    },
+    "reasoning": {
+      "visual": "Requires reading logs and dashboards",
+      "auditory": "Text-chat standup — no phone calls",
+      "fineMotor": "Significant typing required",
+      "cognitiveLoad": "Complex distributed systems reasoning",
+      "verbalComm": "Fully async text team"
+    },
+    "generatedAt": "2025-01-10T11:05:00Z"
+  },
+  {
+    "id": "jv003",
+    "jobId": "j003",
+    "vector": [3, 5, 2, 3, 5],
+    "dimensions": {
+      "visual": 3,
+      "auditory": 5,
+      "fineMotor": 2,
+      "cognitiveLoad": 3,
+      "verbalComm": 5
+    },
+    "reasoning": {
+      "visual": "Reviewing designs and test recordings",
+      "auditory": "Requires conducting and listening in interviews",
+      "fineMotor": "Note-taking only — low physical demand",
+      "cognitiveLoad": "Pattern analysis across user sessions",
+      "verbalComm": "Frequent verbal facilitation of research sessions"
+    },
+    "generatedAt": "2025-01-10T11:10:00Z"
+  },
+  {
+    "id": "jv004",
+    "jobId": "j004",
+    "vector": [3, 1, 4, 4, 1],
+    "dimensions": {
+      "visual": 3,
+      "auditory": 1,
+      "fineMotor": 4,
+      "cognitiveLoad": 4,
+      "verbalComm": 1
+    },
+    "reasoning": {
+      "visual": "Reading code, reviewing UI on device simulators",
+      "auditory": "Slack-first team — no phone",
+      "fineMotor": "Active coding and device testing",
+      "cognitiveLoad": "Multi-platform logic management",
+      "verbalComm": "GitHub PR comments — written only"
+    },
+    "generatedAt": "2025-01-10T11:15:00Z"
+  },
+  {
+    "id": "jv005",
+    "jobId": "j005",
+    "vector": [4, 1, 3, 5, 1],
+    "dimensions": {
+      "visual": 4,
+      "auditory": 1,
+      "fineMotor": 3,
+      "cognitiveLoad": 5,
+      "verbalComm": 1
+    },
+    "reasoning": {
+      "visual": "Monitoring dashboards and infrastructure alerts",
+      "auditory": "Written-only communication",
+      "fineMotor": "CLI and config file editing",
+      "cognitiveLoad": "Complex systems architecture thinking",
+      "verbalComm": "Fully remote async team"
+    },
+    "generatedAt": "2025-01-10T11:20:00Z"
+  },
+  {
+    "id": "jv006",
+    "jobId": "j006",
+    "vector": [2, 1, 4, 5, 1],
+    "dimensions": {
+      "visual": 2,
+      "auditory": 1,
+      "fineMotor": 4,
+      "cognitiveLoad": 5,
+      "verbalComm": 1
+    },
+    "reasoning": {
+      "visual": "Screen reader compatible IDE provided — low visual demand",
+      "auditory": "Written specs and PRs — no phone calls",
+      "fineMotor": "Standard coding keyboard usage",
+      "cognitiveLoad": "Financial system complexity requires deep focus",
+      "verbalComm": "Fully written async team"
+    },
+    "generatedAt": "2025-01-10T11:25:00Z"
+  }
+]

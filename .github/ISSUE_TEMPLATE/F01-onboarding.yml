@@ -1,0 +1,25 @@
+name: "F01 — Onboarding Form"
+description: "Claim and implement the multi-step onboarding form"
+labels: ["feature", "day-1", "available"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Before claiming
+        - Check no one else has this issue assigned
+        - Read `frontend/src/features/F01-onboarding/FEATURE.md` fully
+  - type: input
+    id: name
+    attributes:
+      label: Your name / GitHub handle
+    validations:
+      required: true
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: I confirm
+      options:
+        - label: I have read the FEATURE.md
+        - label: I will branch as `feature/F01-<my-name>`
+        - label: My PR title will start with `[F01]`

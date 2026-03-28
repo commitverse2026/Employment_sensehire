@@ -1,0 +1,52 @@
+[
+  {
+    "id": "s001",
+    "authorName": "Priya Mehta",
+    "authorTitle": "Frontend Developer",
+    "disabilityCategory": "Visual",
+    "title": "How low vision made me a better accessibility engineer",
+    "story": "When I started my career, I was ashamed of my low vision. I hid it during interviews, struggled with tiny font sizes in code reviews, and never asked for accommodations I desperately needed. Three years later, I now lead accessibility audits at my company — because I experience inaccessible design firsthand every single day. My disability turned into my superpower. Every component I build, I test with magnification at 400%. Every colour combination I choose, I run through a contrast checker. My team ships more accessible software than any other team in the org — and it is not a coincidence. If you have a visual disability, the tech industry needs you more than you know.",
+    "postedAt": "2025-01-05T08:30:00Z",
+    "likes": 142
+  },
+  {
+    "id": "s002",
+    "authorName": "Arjun Sharma",
+    "authorTitle": "Backend Engineer",
+    "disabilityCategory": "Hearing",
+    "title": "From rejection to leading a team of 8 — as a Deaf engineer",
+    "story": "I was rejected from 14 jobs before I got my first engineering role. Most rejections came after the phone screen — once they realised I was Deaf and would need accommodations. One interviewer literally said 'we are a fast-paced verbal team'. I almost gave up. Then I found a company that communicated entirely via Slack and GitHub. Within 18 months I was leading a backend team. The irony? Our team's written documentation is now the gold standard across the company — because async, written communication forces clarity. Being Deaf did not hold me back. Inaccessible hiring processes did. The two are very different things.",
+    "postedAt": "2025-01-07T14:15:00Z",
+    "likes": 289
+  },
+  {
+    "id": "s003",
+    "authorName": "Sara Al-Rashidi",
+    "authorTitle": "Data Analyst",
+    "disabilityCategory": "Motor",
+    "title": "I built my entire career with voice commands — and I am faster than most",
+    "story": "Limited hand mobility means I have not used a traditional keyboard in four years. I run my entire workflow with Dragon NaturallySpeaking and custom voice macros. SQL queries, Python scripts, Power BI dashboards — all voice-controlled. When I told my current employer during the interview, they went quiet. I thought I had lost the offer. Instead, my manager said: 'That is the most impressive workflow adaptation I have ever seen — when can you start?' I now train my colleagues in voice productivity because it turns out speaking your code forces you to think it through more clearly. My disability gave me a workflow superpower. I just needed an employer willing to see it.",
+    "postedAt": "2025-01-09T09:45:00Z",
+    "likes": 198
+  },
+  {
+    "id": "s004",
+    "authorName": "James Okafor",
+    "authorTitle": "UX Researcher",
+    "disabilityCategory": "Cognitive",
+    "title": "ADHD is not a bug in my brain — it is a feature in UX research",
+    "story": "I was diagnosed with ADHD at 24, mid-career. My first reaction was shame — I thought it explained every failure, every missed deadline, every meeting I could not focus through. Then my therapist said something that changed everything: 'Your brain is not broken. It is just optimised for different conditions.' In UX research, my hyperfocus is extraordinary. Give me a complex usability problem and I will spend 6 hours going down rabbit holes that surface insights nobody else finds. I notice the tiny hesitation a user has before clicking a button. I notice the micro-frustration in their voice. My ADHD makes me an exceptional observer. The challenge was never my brain — it was finding the right environment to let it run.",
+    "postedAt": "2025-01-11T16:00:00Z",
+    "likes": 334
+  },
+  {
+    "id": "s005",
+    "authorName": "Mei Lin",
+    "authorTitle": "Java Developer",
+    "disabilityCategory": "Visual",
+    "title": "I am blind and I write better code than most sighted developers — here is why",
+    "story": "I have been blind since birth. I have used a screen reader my entire life. When I entered software engineering, people assumed I would need constant help. The opposite happened. Because I cannot skim code visually, I have to understand every line deeply. My code review comments are thorough because I process logic, not layout. My variable names are descriptive because I rely on them completely. I have never had a production bug caused by a typo I could not see — because my tools catch everything. What I lack in visual scanning, I make up for in systematic, methodical thinking. Three companies later, I am a senior engineer and the go-to person for complex architectural decisions. Blindness shaped how I think about code — and that thinking is rigorous, deep, and precise.",
+    "postedAt": "2025-01-13T11:30:00Z",
+    "likes": 521
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "id": "u001",
+    "username": "priya.mehta",
+    "password": "priya123",
+    "role": "candidate",
+    "candidateId": "c001",
+    "email": "priya.mehta@example.com"
+  },
+  {
+    "id": "u002",
+    "username": "arjun.sharma",
+    "password": "arjun123",
+    "role": "candidate",
+    "candidateId": "c002",
+    "email": "arjun.sharma@example.com"
+  },
+  {
+    "id": "u003",
+    "username": "sara.rashidi",
+    "password": "sara123",
+    "role": "candidate",
+    "candidateId": "c003",
+    "email": "sara.rashidi@example.com"
+  },
+  {
+    "id": "u004",
+    "username": "james.okafor",
+    "password": "james123",
+    "role": "candidate",
+    "candidateId": "c004",
+    "email": "james.okafor@example.com"
+  },
+  {
+    "id": "u005",
+    "username": "mei.lin",
+    "password": "mei123",
+    "role": "candidate",
+    "candidateId": "c005",
+    "email": "mei.lin@example.com"
+  },
+  {
+    "id": "u006",
+    "username": "ravi.iyer",
+    "password": "ravi123",
+    "role": "candidate",
+    "candidateId": "c006",
+    "email": "ravi.iyer@example.com"
+  },
+  {
+    "id": "u007",
+    "username": "amara.diallo",
+    "password": "amara123",
+    "role": "candidate",
+    "candidateId": "c007",
+    "email": "amara.diallo@example.com"
+  },
+  {
+    "id": "u008",
+    "username": "tomas.rivera",
+    "password": "tomas123",
+    "role": "candidate",
+    "candidateId": "c008",
+    "email": "tomas.rivera@example.com"
+  },
+  {
+    "id": "u009",
+    "username": "employer.admin",
+    "password": "employer123",
+    "role": "employer",
+    "candidateId": null,
+    "email": "hr@techcorp.example.com"
+  }
+]
