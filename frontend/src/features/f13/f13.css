@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  background: #0d1117;
+}
+
+.f13-container {
+  padding: 30px;
+  color: white;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Title */
+.f13-container h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* Search Bar */
+input[type="text"] {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid #30363d;
+  background: #161b22;
+  color: white;
+  font-size: 15px;
+  outline: none;
+  transition: 0.2s;
+}
+
+input[type="text"]:focus {
+  border-color: #2ea043;
+  box-shadow: 0 0 10px rgba(46, 160, 67, 0.3);
+}
+
+/* Slider */
+.score {
+  margin-top: 20px;
+}
+
+.score label {
+  display: block;
+  margin-bottom: 6px;
+  color: #8b949e;
+}
+
+input[type="range"] {
+  width: 100%;
+}
+
+/* Chips */
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.chips button {
+  padding: 10px 16px;
+  border-radius: 999px;
+  border: 1px solid #30363d;
+  background: #161b22;
+  color: #c9d1d9;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.chips button:hover {
+  border-color: #2ea043;
+  color: #2ea043;
+}
+
+.chips button.active {
+  background: linear-gradient(135deg, #2ea043, #238636);
+  color: white;
+  border: none;
+  box-shadow: 0 0 10px rgba(46, 160, 67, 0.5);
+}
+
+/* Job Grid */
+.jobs {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+/* Job Card */
+.job-card {
+  background: #161b22;
+  border-radius: 16px;
+  padding: 18px;
+  border: 1px solid #30363d;
+  transition: all 0.25s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.job-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  border-color: #2ea043;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+}
+
+/* Title */
+.job-card h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+/* Company */
+.job-card p {
+  margin: 5px 0 10px;
+  color: #8b949e;
+}
+
+/* Score Badge */
+.job-card span {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 8px;
+  background: #2ea043;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Tags */
+.tags {
+  margin-top: 10px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  font-size: 11px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  background: #21262d;
+  color: #8b949e;
+}

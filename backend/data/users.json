@@ -70,5 +70,9 @@
     "role": "employer",
     "candidateId": null,
     "email": "hr@techcorp.example.com"
-  }
+  },
+  { "id": "u001", "username": "priya" },
+  { "id": "u002", "username": "arjun" },
+  { "id": "u003", "username": "sara" }
+
 ]
