@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
+import Form from './pages/Form'
 import config from '../features.config.js'
 
 import F01 from './features/f01/f01.jsx'
@@ -23,12 +24,13 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/form" element={<Form />} />
 
         {/* Day2 */}
         {config.day2Enabled && (
           <Route path="/day2" element={<div>Day 2 unlocked!</div>} />
         )}
-     
+
         <Route path="/f01" element={<F01 />} />
         <Route path="/f02" element={<F02 />} />
         <Route path="/f03" element={<F03 />} />
@@ -44,7 +46,7 @@ export default function App() {
         <Route path="/f13" element={<F13 />} />
         <Route path="/f14" element={<F14 />} />
         <Route path="/f15" element={<F15 />} />
-         <Route path="*" element={<div style={{color: 'white'}}>Page Not Found</div>} />
+        <Route path="*" element={<div style={{ color: 'white' }}>Page Not Found</div>} />
       </Routes>
     </BrowserRouter>
   )
