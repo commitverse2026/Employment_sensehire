@@ -1,7 +1,7 @@
-import DisabilityProfiler from "./components/DisabilityProfiler";
+import GapIdentifier from "./components/GapIdentifier";
 
 function App() {
-  return <DisabilityProfiler />;
+  return <GapIdentifier />;
 }
 
 export default App;
