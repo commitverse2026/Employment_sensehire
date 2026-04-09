@@ -1,0 +1,75 @@
+.match-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background: #0f172a;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.card {
+  background: #1e293b;
+  padding: 30px;
+  border-radius: 16px;
+  text-align: center;
+  width: 320px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.progress-wrapper {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+svg {
+  transform: rotate(-90deg);
+}
+
+.bg-circle {
+  fill: none;
+  stroke: #334155;
+  stroke-width: 12;
+}
+
+.progress-circle {
+  fill: none;
+  stroke-width: 12;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 1.5s ease;
+}
+
+.score-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 28px;
+  font-weight: bold;
+  color: #f1f5f9;
+}
+
+.tier-badge {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 999px;
+  color: white;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.summary {
+  color: #cbd5f5;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.loading {
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+}
