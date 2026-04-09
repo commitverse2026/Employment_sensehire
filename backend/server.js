@@ -1,25 +1,16 @@
 const express = require("express");
 const cors = require("cors");
-
 const app = express();
 
-// ======================
-// Middleware
-// ======================
 app.use(cors());
 app.use(express.json());
 
-// ======================
-// TEST ROUTE
-// ======================
-app.get("/api/test", (req, res) => {
-  res.json({ message: "API working ✅" });
-});
+// Main Feature 12 Route
+app.use("/api/f12", require("./routes/f12"));
 
-// ======================
-// ROUTES
-// ======================
+// Existing F04 Route
 app.use("/api/jobs", require("./routes/f04-routes"));
+
 app.use("/api/f05", require("./routes/f05-routes"));
 app.use("/api/f07", require("./routes/f07-routes"));
 // ======================
@@ -56,7 +47,6 @@ app.get("/api/compatibility/:candidateId/:jobId", (req, res) => {
 // START SERVER
 // ======================
 const PORT = 5000;
-
 app.listen(PORT, () => {
   console.log(`🚀 Server running on http://localhost:${PORT}`);
 });
