@@ -19,8 +19,8 @@ app.get("/api/test", (req, res) => {
 // ROUTES
 // ======================
 app.use("/api/jobs", require("./routes/f04-routes"));
-app.use("/api/f05", require("./routes/f05-routes"));
-app.use("/api/f07", require("./routes/f07-routes"));
+//app.use("/api/f05", require("./routes/f05-routes"));
+//app.use("/api/f07", require("./routes/f07-routes"));
 
 // ======================
 // F01 ROUTE
@@ -54,7 +54,7 @@ app.get("/api/compatibility/:candidateId/:jobId", (req, res) => {
 // ======================
 // F10 ROUTE (AI Recommendations)
 // ======================
-app.use('/api/recommendations', require('./routes/f10-routes'));
+//app.use('/api/recommendations', require('./routes/f10-routes'));
 
 // ======================
 // F11 ROUTE (Candidate Dashboard)
