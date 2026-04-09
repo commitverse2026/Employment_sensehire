@@ -12,30 +12,29 @@ app.use(express.json());
 // ======================
 // TEST ROUTE
 // ======================
-app.get("/", (req, res) => {
-  res.send("Backend is running 🚀");
+app.get("/api/test", (req, res) => {
+  res.json({ message: "API working ✅" });
 });
 
 // ======================
-// F01 ROUTE (Onboarding)
+// ROUTES
+// ======================
+app.use("/api/jobs", require("./routes/f04-routes"));
+
+// ======================
+// F01 ROUTE
 // ======================
 app.post("/api/onboarding", (req, res) => {
   console.log("F01 Data:", req.body);
-
-  res.json({
-    message: "Onboarding data received successfully",
-  });
+  res.json({ message: "Onboarding data received" });
 });
 
 // ======================
-// F03 ROUTE (Ability Input)
+// F03 ROUTE
 // ======================
 app.post("/api/f03", (req, res) => {
   console.log("F03 Data:", req.body);
-
-  res.json({
-    message: "F03 data received successfully",
-  });
+  res.json({ message: "F03 data received" });
 });
 
 // ======================
