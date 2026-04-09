@@ -126,5 +126,29 @@
     "location": "Mexico City, Mexico",
     "remote": true,
     "appliedJobs": ["j003", "j004"]
+  },
+  {
+    "id": 1,
+    "name": "Aarya Chaudhari",
+    "role": "Frontend Developer",
+    "score": 92,
+    "summary": "Strong React developer with UI and accessibility focus.",
+    "gapSummary": "Needs improvement in backend APIs."
+  },
+  {
+    "id": 2,
+    "name": "Rohit Sharma",
+    "role": "Backend Engineer",
+    "score": 85,
+    "summary": "Expert in Node.js and database optimization.",
+    "gapSummary": "Limited frontend experience."
+  },
+  {
+    "id": 3,
+    "name": "Sneha Patil",
+    "role": "UI/UX Designer",
+    "score": 78,
+    "summary": "Creative designer with strong Figma skills.",
+    "gapSummary": "Needs more real-world projects."
   }
 ]
