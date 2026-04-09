@@ -1,51 +1,156 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Home from './pages/Home'
-import config from '../features.config.js'
+import { useState } from "react";
 
-import F01 from './features/f01/f01.jsx'
-import F02 from './features/f02/f02.jsx'
-import F03 from './features/f03/f03.jsx'
-import F04 from './features/f04/f04.jsx'
-import F05 from './features/f05/f05.jsx'
-import F06 from './features/f06/f06.jsx'
-import F07 from './features/f07/f07.jsx'
-import F08 from './features/f08/f08.jsx'
-import F09 from './features/f09/f09.jsx'
-import F10 from './features/f10/f10.jsx'
-import F11 from './features/f11/f11.jsx'
-import F12 from './features/f12/f12.jsx'
-import F13 from './features/f13/f13.jsx'
-import F14 from './features/f14/f14.jsx'
-import F15 from './features/f15/f15.jsx'
+export default function DisabilityProfiler() {
+  const [activeIndex, setActiveIndex] = useState(null);
+  const [selectedType, setSelectedType] = useState("");
+  const [details, setDetails] = useState("");
 
-export default function App() {
+  const disabilityTypes = [
+    "Physical Disability",
+    "Visual Impairment",
+    "Hearing Impairment",
+    "Cognitive Disability",
+  ];
+
+  const toggleAccordion = (index, type) => {
+    setActiveIndex(activeIndex === index ? null : index);
+    setSelectedType(type);
+  };
+
+  const handleSubmit = async () => {
+    alert("Submitted Successfully!");
+    console.log({ selectedType, details });
+  };
+
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
+    <div style={styles.wrapper}>
+      <div style={styles.card}>
+        <h2 style={styles.heading}>Disability Profiler</h2>
+        <p style={styles.subHeading}>
+          Select a disability category and describe specific needs
+        </p>
 
-        {/* Day2 */}
-        {config.day2Enabled && (
-          <Route path="/day2" element={<div>Day 2 unlocked!</div>} />
-        )}
-     
-        <Route path="/f01" element={<F01 />} />
-        <Route path="/f02" element={<F02 />} />
-        <Route path="/f03" element={<F03 />} />
-        <Route path="/f04" element={<F04 />} />
-        <Route path="/f05" element={<F05 />} />
-        <Route path="/f06" element={<F06 />} />
-        <Route path="/f07" element={<F07 />} />
-        <Route path="/f08" element={<F08 />} />
-        <Route path="/f09" element={<F09 />} />
-        <Route path="/f10" element={<F10 />} />
-        <Route path="/f11" element={<F11 />} />
-        <Route path="/f12" element={<F12 />} />
-        <Route path="/f13" element={<F13 />} />
-        <Route path="/f14" element={<F14 />} />
-        <Route path="/f15" element={<F15 />} />
-         <Route path="*" element={<div style={{color: 'white'}}>Page Not Found</div>} />
-      </Routes>
-    </BrowserRouter>
-  )
+        {disabilityTypes.map((type, index) => (
+          <div key={index} style={styles.accordionItem}>
+            <div
+              style={{
+                ...styles.accordionHeader,
+                background:
+                  activeIndex === index
+                    ? "linear-gradient(to right, #6366f1, #9333ea)"
+                    : "#f9fafb",
+                color: activeIndex === index ? "#fff" : "#111",
+              }}
+              onClick={() => toggleAccordion(index, type)}
+            >
+              {type}
+              <span style={styles.icon}>
+                {activeIndex === index ? "−" : "+"}
+              </span>
+            </div>
+
+            <div
+              style={{
+                ...styles.accordionContent,
+                maxHeight: activeIndex === index ? "200px" : "0px",
+                padding: activeIndex === index ? "18px" : "0 18px",
+              }}
+            >
+              <textarea
+                placeholder="Describe specific needs..."
+                value={details}
+                onChange={(e) => setDetails(e.target.value)}
+                style={styles.textarea}
+              />
+            </div>
+          </div>
+        ))}
+
+        <button style={styles.button} onClick={handleSubmit}>
+          Submit Profile
+        </button>
+      </div>
+    </div>
+  );
 }
+
+const styles = {
+  wrapper: {
+    minHeight: "100vh",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    background: "linear-gradient(135deg, #4f46e5, #9333ea)",
+    fontFamily: "'Inter', sans-serif",
+  },
+  card: {
+    background: "#ffffff",
+    padding: "50px 40px",
+    borderRadius: "24px",
+    width: "480px",
+    boxShadow: "0 25px 60px rgba(0,0,0,0.15)",
+  },
+  heading: {
+    textAlign: "center",
+    fontSize: "24px",
+    fontWeight: "600",
+    color: "#111",
+    marginBottom: "8px",
+  },
+  subHeading: {
+    textAlign: "center",
+    fontSize: "14px",
+    color: "#555",
+    marginBottom: "30px",
+  },
+  accordionItem: {
+    marginBottom: "16px",
+    borderRadius: "16px",
+    overflow: "hidden",
+    border: "1px solid #e5e7eb",
+    transition: "0.3s",
+  },
+  accordionHeader: {
+    padding: "16px 18px",
+    cursor: "pointer",
+    fontWeight: "500",
+    fontSize: "15px",
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+    transition: "0.3s",
+  },
+  icon: {
+    fontSize: "18px",
+    fontWeight: "bold",
+  },
+  accordionContent: {
+    overflow: "hidden",
+    transition: "all 0.4s ease",
+    background: "#fff",
+  },
+  textarea: {
+    width: "100%",
+    minHeight: "90px",
+    padding: "14px",
+    borderRadius: "12px",
+    border: "1px solid #d1d5db",
+    fontSize: "14px",
+    outline: "none",
+    resize: "none",
+    color: "#000",
+  },
+  button: {
+    marginTop: "30px",
+    width: "100%",
+    padding: "14px",
+    borderRadius: "14px",
+    border: "none",
+    fontWeight: "500",
+    fontSize: "15px",
+    cursor: "pointer",
+    background: "linear-gradient(to right, #6366f1, #a855f7)",
+    color: "#fff",
+    transition: "0.3s",
+  },
+};
