@@ -39,9 +39,15 @@ app.post("/api/f03", (req, res) => {
 });
 
 // ======================
+// F15 ROUTES (Speech-to-Text Profile Builder)
+// ======================
+const f15Routes = require("./routes/f15-routes")
+app.use('/api', f15Routes)
+
+// ======================
 // START SERVER
 // ======================
-const PORT = 5000;
+const PORT = process.env.PORT || 3001;
 
 app.listen(PORT, () => {
   console.log(`🚀 Server running on http://localhost:${PORT}`);

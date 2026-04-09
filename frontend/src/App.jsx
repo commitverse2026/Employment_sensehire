@@ -44,6 +44,7 @@ export default function App() {
         <Route path="/f13" element={<F13 />} />
         <Route path="/f14" element={<F14 />} />
         <Route path="/f15" element={<F15 />} />
+        <Route path="/accessibility/stt" element={<F15 />} />
          <Route path="*" element={<div style={{color: 'white'}}>Page Not Found</div>} />
       </Routes>
     </BrowserRouter>
