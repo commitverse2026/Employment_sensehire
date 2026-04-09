@@ -3,9 +3,17 @@
     "id": "c001",
     "userId": "u001",
     "fullName": "Priya Mehta",
-    "skills": ["React", "Node.js", "Figma", "CSS"],
+    "skills": [
+      "React",
+      "Node.js",
+      "Figma",
+      "CSS"
+    ],
     "yearsExperience": 3,
-    "preferredRoles": ["Frontend Developer", "UI Engineer"],
+    "preferredRoles": [
+      "Frontend Developer",
+      "UI Engineer"
+    ],
     "disabilityCategory": "Visual",
     "disabilitySubType": "Low Vision",
     "abilityVectorId": "av001",
@@ -13,15 +21,26 @@
     "bio": "Frontend developer with low vision who builds accessible UIs for a living. I use high-contrast themes and screen magnification daily.",
     "location": "Pune, India",
     "remote": true,
-    "appliedJobs": ["j001", "j003"]
+    "appliedJobs": [
+      "j001",
+      "j003"
+    ]
   },
   {
     "id": "c002",
     "userId": "u002",
     "fullName": "Arjun Sharma",
-    "skills": ["Python", "Django", "PostgreSQL", "REST APIs"],
+    "skills": [
+      "Python",
+      "Django",
+      "PostgreSQL",
+      "REST APIs"
+    ],
     "yearsExperience": 5,
-    "preferredRoles": ["Backend Developer", "Full Stack Engineer"],
+    "preferredRoles": [
+      "Backend Developer",
+      "Full Stack Engineer"
+    ],
     "disabilityCategory": "Hearing",
     "disabilitySubType": "Deaf",
     "abilityVectorId": "av002",
@@ -29,15 +48,26 @@
     "bio": "Deaf backend engineer. I communicate via text and video relay. I have led teams of 8 and shipped production APIs used by 200k users.",
     "location": "Bangalore, India",
     "remote": true,
-    "appliedJobs": ["j002", "j004"]
+    "appliedJobs": [
+      "j002",
+      "j004"
+    ]
   },
   {
     "id": "c003",
     "userId": "u003",
     "fullName": "Sara Al-Rashidi",
-    "skills": ["Data Analysis", "Power BI", "Excel", "SQL"],
+    "skills": [
+      "Data Analysis",
+      "Power BI",
+      "Excel",
+      "SQL"
+    ],
     "yearsExperience": 4,
-    "preferredRoles": ["Data Analyst", "Business Intelligence"],
+    "preferredRoles": [
+      "Data Analyst",
+      "Business Intelligence"
+    ],
     "disabilityCategory": "Motor",
     "disabilitySubType": "Limited Hand Mobility",
     "abilityVectorId": "av003",
@@ -45,15 +75,26 @@
     "bio": "Data analyst with limited hand mobility — I use voice commands and keyboard shortcuts exclusively. Fast, accurate, and detail-oriented.",
     "location": "Dubai, UAE",
     "remote": true,
-    "appliedJobs": ["j001", "j005"]
+    "appliedJobs": [
+      "j001",
+      "j005"
+    ]
   },
   {
     "id": "c004",
     "userId": "u004",
     "fullName": "James Okafor",
-    "skills": ["UX Research", "Figma", "User Testing", "Notion"],
+    "skills": [
+      "UX Research",
+      "Figma",
+      "User Testing",
+      "Notion"
+    ],
     "yearsExperience": 2,
-    "preferredRoles": ["UX Researcher", "Product Designer"],
+    "preferredRoles": [
+      "UX Researcher",
+      "Product Designer"
+    ],
     "disabilityCategory": "Cognitive",
     "disabilitySubType": "ADHD",
     "abilityVectorId": "av004",
@@ -61,15 +102,25 @@
     "bio": "UX researcher with ADHD. I thrive in structured environments with clear deliverables. My hyperfocus makes me exceptionally thorough in research sessions.",
     "location": "Lagos, Nigeria",
     "remote": true,
-    "appliedJobs": ["j003"]
+    "appliedJobs": [
+      "j003"
+    ]
   },
   {
     "id": "c005",
     "userId": "u005",
     "fullName": "Mei Lin",
-    "skills": ["Java", "Spring Boot", "Microservices", "Docker"],
+    "skills": [
+      "Java",
+      "Spring Boot",
+      "Microservices",
+      "Docker"
+    ],
     "yearsExperience": 6,
-    "preferredRoles": ["Java Developer", "Backend Engineer"],
+    "preferredRoles": [
+      "Java Developer",
+      "Backend Engineer"
+    ],
     "disabilityCategory": "Visual",
     "disabilitySubType": "Blind",
     "abilityVectorId": "av005",
@@ -77,15 +128,27 @@
     "bio": "Blind Java engineer using NVDA screen reader and braille display. 6 years shipping microservices. Accessibility is not a feature for me — it is the foundation.",
     "location": "Shanghai, China",
     "remote": false,
-    "appliedJobs": ["j002", "j004", "j006"]
+    "appliedJobs": [
+      "j002",
+      "j004",
+      "j006"
+    ]
   },
   {
     "id": "c006",
     "userId": "u006",
     "fullName": "Ravi Iyer",
-    "skills": ["DevOps", "AWS", "Terraform", "CI/CD"],
+    "skills": [
+      "DevOps",
+      "AWS",
+      "Terraform",
+      "CI/CD"
+    ],
     "yearsExperience": 7,
-    "preferredRoles": ["DevOps Engineer", "Cloud Architect"],
+    "preferredRoles": [
+      "DevOps Engineer",
+      "Cloud Architect"
+    ],
     "disabilityCategory": "Motor",
     "disabilitySubType": "Wheelchair User",
     "abilityVectorId": "av006",
@@ -93,15 +156,26 @@
     "bio": "DevOps engineer and wheelchair user. My disability has zero impact on cloud infrastructure work. I have cut deployment times by 60% at my last two roles.",
     "location": "Chennai, India",
     "remote": true,
-    "appliedJobs": ["j005", "j006"]
+    "appliedJobs": [
+      "j005",
+      "j006"
+    ]
   },
   {
     "id": "c007",
     "userId": "u007",
     "fullName": "Amara Diallo",
-    "skills": ["Content Writing", "SEO", "WordPress", "Canva"],
+    "skills": [
+      "Content Writing",
+      "SEO",
+      "WordPress",
+      "Canva"
+    ],
     "yearsExperience": 3,
-    "preferredRoles": ["Content Writer", "Digital Marketer"],
+    "preferredRoles": [
+      "Content Writer",
+      "Digital Marketer"
+    ],
     "disabilityCategory": "Cognitive",
     "disabilitySubType": "Dyslexia",
     "abilityVectorId": "av007",
@@ -109,15 +183,25 @@
     "bio": "Content writer with dyslexia. I use text-to-speech tools to proofread and my writing consistently ranks on page one. Dyslexia makes me think differently — and that is my edge.",
     "location": "Dakar, Senegal",
     "remote": true,
-    "appliedJobs": ["j001"]
+    "appliedJobs": [
+      "j001"
+    ]
   },
   {
     "id": "c008",
     "userId": "u008",
     "fullName": "Tomás Rivera",
-    "skills": ["React Native", "TypeScript", "Firebase", "Redux"],
+    "skills": [
+      "React Native",
+      "TypeScript",
+      "Firebase",
+      "Redux"
+    ],
     "yearsExperience": 4,
-    "preferredRoles": ["Mobile Developer", "React Native Engineer"],
+    "preferredRoles": [
+      "Mobile Developer",
+      "React Native Engineer"
+    ],
     "disabilityCategory": "Hearing",
     "disabilitySubType": "Hard of Hearing",
     "abilityVectorId": "av008",
@@ -125,6 +209,136 @@
     "bio": "Mobile developer, hard of hearing. I prefer async communication — written specs, PRs, Slack. I have shipped 3 apps with 50k+ downloads.",
     "location": "Mexico City, Mexico",
     "remote": true,
-    "appliedJobs": ["j003", "j004"]
+    "appliedJobs": [
+      "j003",
+      "j004"
+    ]
+  },
+  {
+    "id": "c329804",
+    "userId": "u329804",
+    "fullName": "Test User",
+    "skills": [
+      "React"
+    ],
+    "yearsExperience": 3,
+    "preferredRoles": [],
+    "disabilityCategory": "Unknown",
+    "disabilitySubType": "Unknown",
+    "abilityVectorId": "av-unknown",
+    "profileComplete": 85,
+    "bio": "QA bio",
+    "location": "Pune",
+    "remote": false,
+    "appliedJobs": []
+  },
+  {
+    "id": "c338495",
+    "userId": "u338495",
+    "fullName": "Proxy Test",
+    "skills": [
+      "Node"
+    ],
+    "yearsExperience": 4,
+    "preferredRoles": [],
+    "disabilityCategory": "Unknown",
+    "disabilitySubType": "Unknown",
+    "abilityVectorId": "av-unknown",
+    "profileComplete": 85,
+    "bio": "via vite proxy",
+    "location": "Mumbai",
+    "remote": false,
+    "appliedJobs": []
+  },
+  {
+    "id": "c648568",
+    "userId": "u648568",
+    "fullName": "Name",
+    "skills": [
+      "Communication"
+    ],
+    "yearsExperience": 2,
+    "preferredRoles": [],
+    "disabilityCategory": "Unknown",
+    "disabilitySubType": "Unknown",
+    "abilityVectorId": "av-unknown",
+    "profileComplete": 85,
+    "bio": "Github",
+    "location": "India",
+    "remote": false,
+    "appliedJobs": []
+  },
+  {
+    "id": "c944494",
+    "userId": "u944494",
+    "fullName": "Name",
+    "skills": [
+      "Communication"
+    ],
+    "yearsExperience": 3,
+    "preferredRoles": [],
+    "disabilityCategory": "Unknown",
+    "disabilitySubType": "Unknown",
+    "abilityVectorId": "av-unknown",
+    "profileComplete": 85,
+    "bio": "Gith",
+    "location": "Pooni",
+    "remote": false,
+    "appliedJobs": []
+  },
+  {
+    "id": "c351256",
+    "userId": "u351256",
+    "fullName": "Name",
+    "skills": [
+      "Communication"
+    ],
+    "yearsExperience": 12,
+    "preferredRoles": [],
+    "disabilityCategory": "Unknown",
+    "disabilitySubType": "Unknown",
+    "abilityVectorId": "av-unknown",
+    "profileComplete": 85,
+    "bio": "Github",
+    "location": "India",
+    "remote": false,
+    "appliedJobs": []
+  },
+  {
+    "id": "c137294",
+    "userId": "u137294",
+    "fullName": "Name",
+    "skills": [
+      "Communication"
+    ],
+    "yearsExperience": 5,
+    "preferredRoles": [],
+    "disabilityCategory": "Unknown",
+    "disabilitySubType": "Unknown",
+    "abilityVectorId": "av-unknown",
+    "profileComplete": 85,
+    "bio": "Github",
+    "location": "India",
+    "remote": false,
+    "appliedJobs": []
+  },
+  {
+    "id": "c386876",
+    "userId": "u386876",
+    "fullName": "At least",
+    "skills": [
+      "Communication",
+      "Listening skills"
+    ],
+    "yearsExperience": 12,
+    "preferredRoles": [],
+    "disabilityCategory": "Unknown",
+    "disabilitySubType": "Unknown",
+    "abilityVectorId": "av-unknown",
+    "profileComplete": 85,
+    "bio": "Github",
+    "location": "India",
+    "remote": false,
+    "appliedJobs": []
   }
 ]
