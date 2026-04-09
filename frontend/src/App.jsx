@@ -57,3 +57,10 @@ export default function App() {
     </BrowserRouter>
   )
 }
+import DisabilityProfiler from "./components/DisabilityProfiler";
+
+function App() {
+  return <DisabilityProfiler />;
+}
+
+export default App;
