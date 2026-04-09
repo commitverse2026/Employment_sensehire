@@ -1,3 +1,134 @@
+.f12-page {
+  min-height: 100vh;
+  padding: 32px 16px;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+.f12-panel {
+  max-width: 980px;
+  margin: 0 auto;
+  background: #111827;
+  border: 1px solid #1f2937;
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.f12-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.f12-subtitle {
+  margin-top: 6px;
+  color: #94a3b8;
+}
+
+.f12-form {
+  margin-top: 20px;
+  display: grid;
+  gap: 10px;
+}
+
+.f12-form input,
+.f12-controls select {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #334155;
+  background: #0b1220;
+  color: #e2e8f0;
+}
+
+.f12-form button,
+.f12-secondary-btn {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: none;
+  background: #2563eb;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.f12-secondary-btn {
+  background: #334155;
+}
+
+.f12-controls {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 14px;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.f12-grid {
+  margin-top: 14px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 14px;
+}
+
+.f12-card {
+  background: #0b1220;
+  border: 1px solid #1e293b;
+  border-radius: 12px;
+  padding: 14px;
+}
+
+.f12-card-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.f12-role,
+.f12-location,
+.f12-gap,
+.f12-muted {
+  color: #94a3b8;
+}
+
+.f12-score {
+  margin: 8px 0;
+  color: #22c55e;
+  font-weight: 700;
+}
+
+.f12-tier {
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 999px;
+}
+
+.f12-tier-excellent {
+  background: #166534;
+}
+
+.f12-tier-good {
+  background: #1d4ed8;
+}
+
+.f12-tier-possible {
+  background: #92400e;
+}
+
+.f12-tier-unlikely {
+  background: #991b1b;
+}
+
+.f12-error {
+  color: #f87171;
+}
+
+@media (max-width: 640px) {
+  .f12-controls {
+    grid-template-columns: 1fr;
+  }
+}
 .f12-container {
   padding: 30px;
   background: #0d1117;

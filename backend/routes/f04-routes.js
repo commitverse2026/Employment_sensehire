@@ -2,6 +2,7 @@ const express = require("express");
 const router = express.Router(); // 🔥 MUST BE HERE
 const fs = require("fs");
 const path = require("path");
+const { generateJobVector, upsertJobVector } = require("../controllers/f06");
 
 router.post("/", (req, res) => {
   try {
@@ -19,6 +20,13 @@ router.post("/", (req, res) => {
       ...req.body,
       postedDate: new Date().toISOString().split("T")[0],
     };
+
+    // Auto-generate job vector when F04 task sliders are present.
+    if (newJob.taskRequirements) {
+      const vector = generateJobVector(newJob.taskRequirements);
+      const vectorEntry = upsertJobVector(newJob.id, vector);
+      newJob.jobVectorId = vectorEntry.id;
+    }
 
     data.push(newJob);
 

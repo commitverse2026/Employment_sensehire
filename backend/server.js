@@ -23,6 +23,7 @@ app.get("/api/test", (req, res) => {
 app.use("/api/jobs", require("./routes/f04-routes"));
 app.use("/api/f05", require("./routes/f05-routes"));
 app.use("/api/f07", require("./routes/f07-routes"));
+app.use("/api", require("./routes/f06-routes"));
 app.use("/api/f10", require("./routes/f10-routes"));
 const f13Routes = require("./routes/f13-routes");
 app.use("/api/f13", f13Routes);
@@ -64,6 +65,8 @@ app.get("/api/compatibility/:candidateId/:jobId", (req, res) => {
 // F10 ROUTE (AI Recommendations)
 // ======================
 app.use('/api/recommendations', require('./routes/f10-routes'));
+app.use("/api", require("./routes/f12-routes"));
+app.use("/api", require("./routes/f11-routes"));
 
 // ======================
 // START SERVER
