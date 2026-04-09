@@ -39,6 +39,14 @@ app.post("/api/f03", (req, res) => {
 });
 
 // ======================
+// ✅ F08 ROUTE (Compatibility Score)
+// ======================
+app.get("/api/compatibility/:candidateId/:jobId", (req, res) => {
+  const score = Math.floor(Math.random() * 40) + 60;
+  res.json({ score });
+});
+
+// ======================
 // START SERVER
 // ======================
 const PORT = 5000;
