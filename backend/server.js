@@ -53,6 +53,16 @@ app.get("/api/compatibility/:candidateId/:jobId", (req, res) => {
 });
 
 // ======================
+// F11 ROUTES (Candidate Dashboard)
+// ======================
+const f11Routes = require("./routes/f11-routes")
+app.use('/api', f11Routes)
+
+// ======================
+// F15 ROUTES (Speech-to-Text Profile Builder)
+// ======================
+const f15Routes = require("./routes/f15-routes")
+app.use('/api', f15Routes)
 // F10 ROUTE (AI Recommendations)
 // ======================
 app.use('/api/recommendations', require('./routes/f10-routes'));
@@ -60,6 +70,7 @@ app.use('/api/recommendations', require('./routes/f10-routes'));
 // ======================
 // START SERVER
 // ======================
+const PORT = process.env.PORT || 3001;
 const PORT = 3001;
 
 app.listen(PORT, () => {
