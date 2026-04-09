@@ -9,7 +9,7 @@ export default function CandidateForm() {
     const [roles, setRoles] = useState("");
 
     const addSkill = () => {
-        if (skillInput.trim() !== "" && !skills.includes(skillInput)) {
+        if (skillInput.trim() !== "" && !skills.includes(skillInput.trim())) {
             setSkills([...skills, skillInput.trim()]);
             setSkillInput("");
         }
@@ -33,31 +33,43 @@ export default function CandidateForm() {
             <div style={styles.card}>
                 <h2 style={styles.heading}>Candidate Application</h2>
 
+                {/* Progress Indicator */}
+                <div style={styles.progressBar}>
+                    <div
+                        style={{
+                            ...styles.progressFill,
+                            width: `${(step / 4) * 100}%`,
+                        }}
+                    />
+                </div>
+
                 {/* Step 1 */}
                 {step === 1 && (
-                    <>
-                        <label>Full Name</label>
+                    <div style={styles.stepContainer}>
+                        <label style={styles.label}>Full Name</label>
                         <input
                             style={styles.input}
                             value={name}
                             onChange={(e) => setName(e.target.value)}
-                            placeholder="Enter your name"
+                            placeholder="Enter your full name"
                         />
-                    </>
+                    </div>
                 )}
 
                 {/* Step 2 */}
                 {step === 2 && (
-                    <>
-                        <label>Skills</label>
-                        <div style={{ display: "flex", gap: "10px" }}>
+                    <div style={styles.stepContainer}>
+                        <label style={styles.label}>Skills</label>
+                        <div style={styles.skillInputRow}>
                             <input
                                 style={styles.input}
                                 value={skillInput}
                                 onChange={(e) => setSkillInput(e.target.value)}
-                                placeholder="Add skill"
+                                placeholder="Add a skill"
                             />
-                            <button onClick={addSkill}>Add</button>
+                            <button style={styles.addButton} onClick={addSkill}>
+                                Add
+                            </button>
                         </div>
 
                         <div style={styles.skillContainer}>
@@ -65,7 +77,7 @@ export default function CandidateForm() {
                                 <div key={index} style={styles.skillTag}>
                                     {skill}
                                     <span
-                                        style={{ cursor: "pointer", marginLeft: "8px" }}
+                                        style={styles.removeIcon}
                                         onClick={() => removeSkill(skill)}
                                     >
                                         ×
@@ -73,41 +85,51 @@ export default function CandidateForm() {
                                 </div>
                             ))}
                         </div>
-                    </>
+                    </div>
                 )}
 
                 {/* Step 3 */}
                 {step === 3 && (
-                    <>
-                        <label>Years of Experience</label>
+                    <div style={styles.stepContainer}>
+                        <label style={styles.label}>Years of Experience</label>
                         <input
                             type="number"
                             style={styles.input}
                             value={experience}
                             onChange={(e) => setExperience(e.target.value)}
+                            placeholder="e.g. 2"
                         />
-                    </>
+                    </div>
                 )}
 
                 {/* Step 4 */}
                 {step === 4 && (
-                    <>
-                        <label>Preferred Job Roles</label>
+                    <div style={styles.stepContainer}>
+                        <label style={styles.label}>Preferred Job Roles</label>
                         <input
                             style={styles.input}
                             value={roles}
                             onChange={(e) => setRoles(e.target.value)}
                             placeholder="Frontend Developer, UI Designer"
                         />
-                    </>
+                    </div>
                 )}
 
                 <div style={styles.buttonContainer}>
-                    {step > 1 && <button onClick={prevStep}>Back</button>}
+                    {step > 1 && (
+                        <button style={styles.secondaryButton} onClick={prevStep}>
+                            Back
+                        </button>
+                    )}
+
                     {step < 4 ? (
-                        <button onClick={nextStep}>Next</button>
+                        <button style={styles.primaryButton} onClick={nextStep}>
+                            Next
+                        </button>
                     ) : (
-                        <button onClick={handleSubmit}>Submit</button>
+                        <button style={styles.primaryButton} onClick={handleSubmit}>
+                            Submit
+                        </button>
                     )}
                 </div>
             </div>
@@ -121,42 +143,104 @@ const styles = {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        background: "linear-gradient(to right, #6366f1, #a855f7)",
+        background: "linear-gradient(135deg, #4f46e5, #9333ea)",
+        fontFamily: "'Poppins', sans-serif",
     },
     card: {
-        background: "white",
-        padding: "30px",
-        borderRadius: "15px",
-        width: "400px",
-        boxShadow: "0 10px 25px rgba(0,0,0,0.2)",
+        background: "#ffffff",
+        padding: "40px",
+        borderRadius: "20px",
+        width: "420px",
+        boxShadow: "0 20px 40px rgba(0,0,0,0.15)",
     },
     heading: {
         textAlign: "center",
         marginBottom: "20px",
+        fontWeight: "600",
+        color: "#333",
+    },
+    progressBar: {
+        height: "8px",
+        background: "#e5e7eb",
+        borderRadius: "10px",
+        overflow: "hidden",
+        marginBottom: "30px",
+    },
+    progressFill: {
+        height: "100%",
+        background: "linear-gradient(to right, #6366f1, #a855f7)",
+        transition: "0.3s ease",
+    },
+    stepContainer: {
+        marginBottom: "20px",
+    },
+    label: {
+        display: "block",
+        marginBottom: "6px",
+        fontWeight: "500",
+        color: "#555",
     },
     input: {
         width: "100%",
-        padding: "10px",
-        margin: "10px 0",
-        borderRadius: "8px",
-        border: "1px solid #ccc",
+        padding: "12px",
+        borderRadius: "10px",
+        border: "1px solid #d1d5db",
+        outline: "none",
+        fontSize: "14px",
+        transition: "0.3s",
+    },
+    skillInputRow: {
+        display: "flex",
+        gap: "10px",
+    },
+    addButton: {
+        padding: "12px 18px",
+        borderRadius: "10px",
+        border: "none",
+        background: "#6366f1",
+        color: "white",
+        cursor: "pointer",
+        fontWeight: "500",
     },
     skillContainer: {
         display: "flex",
         flexWrap: "wrap",
         gap: "10px",
-        marginTop: "10px",
+        marginTop: "12px",
     },
     skillTag: {
         background: "#e0e7ff",
-        padding: "6px 12px",
-        borderRadius: "20px",
+        padding: "8px 14px",
+        borderRadius: "25px",
         display: "flex",
         alignItems: "center",
+        fontSize: "13px",
+        fontWeight: "500",
+    },
+    removeIcon: {
+        marginLeft: "8px",
+        cursor: "pointer",
+        fontWeight: "bold",
     },
     buttonContainer: {
         display: "flex",
         justifyContent: "space-between",
-        marginTop: "20px",
+        marginTop: "25px",
+    },
+    primaryButton: {
+        padding: "12px 22px",
+        borderRadius: "12px",
+        border: "none",
+        background: "linear-gradient(to right, #6366f1, #a855f7)",
+        color: "white",
+        fontWeight: "500",
+        cursor: "pointer",
+    },
+    secondaryButton: {
+        padding: "12px 22px",
+        borderRadius: "12px",
+        border: "1px solid #d1d5db",
+        background: "#f3f4f6",
+        cursor: "pointer",
     },
 };
