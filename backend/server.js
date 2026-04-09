@@ -12,30 +12,44 @@ app.use(express.json());
 // ======================
 // TEST ROUTE
 // ======================
-app.get("/", (req, res) => {
-  res.send("Backend is running 🚀");
+app.get("/api/test", (req, res) => {
+  res.json({ message: "API working ✅" });
 });
 
 // ======================
-// F01 ROUTE (Onboarding)
+// ROUTES
+// ======================
+app.use("/api/jobs", require("./routes/f04-routes"));
+app.use("/api/f05", require("./routes/f05-routes"));
+app.use("/api/f07", require("./routes/f07-routes"));
+// ======================
+// F01 ROUTE
 // ======================
 app.post("/api/onboarding", (req, res) => {
   console.log("F01 Data:", req.body);
-
-  res.json({
-    message: "Onboarding data received successfully",
-  });
+  res.json({ message: "Onboarding data received" });
 });
 
+// F02 ROUTE (disability profiler )
+const { getDisabilityTypes, saveDisability } = require("./controllers/f02");
+
+app.get("/api/disability-types", getDisabilityTypes);
+app.post("/api/disability", saveDisability);
+
 // ======================
-// F03 ROUTE (Ability Input)
+// F03 ROUTE
 // ======================
 app.post("/api/f03", (req, res) => {
   console.log("F03 Data:", req.body);
+  res.json({ message: "F03 data received" });
+});
 
-  res.json({
-    message: "F03 data received successfully",
-  });
+// ======================
+// ✅ F08 ROUTE (Compatibility Score)
+// ======================
+app.get("/api/compatibility/:candidateId/:jobId", (req, res) => {
+  const score = Math.floor(Math.random() * 40) + 60;
+  res.json({ score });
 });
 
 // ======================
@@ -49,11 +63,15 @@ app.use('/api', f11Routes)
 // ======================
 const f15Routes = require("./routes/f15-routes")
 app.use('/api', f15Routes)
+// F10 ROUTE (AI Recommendations)
+// ======================
+app.use('/api/recommendations', require('./routes/f10-routes'));
 
 // ======================
 // START SERVER
 // ======================
 const PORT = process.env.PORT || 3001;
+const PORT = 3001;
 
 app.listen(PORT, () => {
   console.log(`🚀 Server running on http://localhost:${PORT}`);

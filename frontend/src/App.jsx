@@ -1,22 +1,22 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Home from './pages/Home'
-import config from '../features.config.js'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import config from "../features.config.js";
 
-import F01 from './features/f01/f01.jsx'
-import F02 from './features/f02/f02.jsx'
-import F03 from './features/f03/f03.jsx'
-import F04 from './features/f04/f04.jsx'
-import F05 from './features/f05/f05.jsx'
-import F06 from './features/f06/f06.jsx'
-import F07 from './features/f07/f07.jsx'
-import F08 from './features/f08/f08.jsx'
-import F09 from './features/f09/f09.jsx'
-import F10 from './features/f10/f10.jsx'
-import F11 from './features/f11/f11.jsx'
-import F12 from './features/f12/f12.jsx'
-import F13 from './features/f13/f13.jsx'
-import F14 from './features/f14/f14.jsx'
-import F15 from './features/f15/f15.jsx'
+import F01 from "./features/f01/f01.jsx";
+import F02 from "./features/f02/f02.jsx";
+import F03 from "./features/f03/f03.jsx";
+import F04 from "./features/f04/f04.jsx";
+import F05 from "./features/f05/f05.jsx";
+import F06 from "./features/f06/f06.jsx";
+import F07 from "./features/f07/f07.jsx";
+import F08 from "./features/f08/f08.jsx";
+import F09 from "./features/f09/f09.jsx";
+import F10 from "./features/f10/f10.jsx";
+import F11 from "./features/f11/f11.jsx";
+import F12 from "./features/f12/f12.jsx";
+import F13 from "./features/f13/f13.jsx";
+import F14 from "./features/f14/f14.jsx";
+import F15 from "./features/f15/f15.jsx";
 
 export default function App() {
   return (
@@ -28,7 +28,7 @@ export default function App() {
         {config.day2Enabled && (
           <Route path="/day2" element={<div>Day 2 unlocked!</div>} />
         )}
-     
+
         <Route path="/f01" element={<F01 />} />
         <Route path="/f02" element={<F02 />} />
         <Route path="/f03" element={<F03 />} />
@@ -53,4 +53,11 @@ export default function App() {
       </Routes>
     </BrowserRouter>
   )
+        <Route
+          path="*"
+          element={<div style={{ color: "white" }}>Page Not Found</div>}
+        />
+      </Routes>
+    </BrowserRouter>
+  );
 }

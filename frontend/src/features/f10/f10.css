@@ -1,0 +1,241 @@
+.f10-container {
+  margin-top: 2rem;
+  width: 100%;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #f8fafc;
+}
+
+.f10-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #fff;
+  background: linear-gradient(135deg, #4ade80, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.f10-heading-icon {
+  font-size: 1.25rem;
+  -webkit-text-fill-color: initial;
+}
+
+/* CARDS GRID */
+.f10-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.25rem;
+}
+
+/* FIX IT CARD */
+.f10-fixit-card {
+  background: rgba(30, 41, 59, 0.6);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  animation: f10-fade-in-up 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.f10-fixit-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(74, 222, 128, 0.4);
+  box-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.5), 0 0 20px -5px rgba(74, 222, 128, 0.15);
+}
+
+@keyframes f10-fade-in-up {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* CARD HEADER (GAP INFO) */
+.f10-card-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding-bottom: 1rem;
+}
+
+.f10-gap-badge {
+  display: inline-block;
+  background: rgba(239, 68, 68, 0.15);
+  color: #fca5a5;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  margin-bottom: 0.75rem;
+}
+
+.f10-gap-text {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #cbd5e1;
+  font-style: italic;
+  margin: 0;
+}
+
+/* CARD BODY (SUGGESTION) */
+.f10-card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.f10-suggestion {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #f8fafc;
+  margin: 0 0 1.5rem 0;
+  font-weight: 500;
+}
+
+/* TOOL LINK BUTTON */
+.f10-tool-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 1rem;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.2s ease;
+}
+
+.f10-tool-link:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.f10-tool-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.f10-tool-label {
+  font-size: 0.75rem;
+  color: #94a3b8;
+  margin-bottom: 0.25rem;
+}
+
+.f10-tool-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #4ade80;
+}
+
+.f10-tool-icon {
+  color: #94a3b8;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.f10-tool-link:hover .f10-tool-icon {
+  color: #f8fafc;
+  transform: translate(2px, -2px);
+}
+
+/* ERROR CARD */
+.f10-error-card {
+  background: rgba(239, 68, 68, 0.05);
+  border: 1px dashed rgba(239, 68, 68, 0.3);
+  border-radius: 16px;
+  padding: 1.5rem;
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.f10-error-icon {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.f10-error-content h4 {
+  margin: 0 0 0.5rem 0;
+  color: #fca5a5;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.f10-error-msg {
+  color: #f8fafc;
+  margin: 0 0 0.5rem 0;
+  font-family: monospace;
+  background: rgba(0,0,0,0.2);
+  padding: 0.5rem;
+  border-radius: 4px;
+  word-break: break-all;
+}
+
+.f10-error-note {
+  font-size: 0.85rem;
+  color: #cbd5e1;
+  margin: 0 0 0.25rem 0;
+}
+
+.f10-error-assurance {
+  font-size: 0.85rem;
+  color: #4ade80;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* SKELETON LOADER */
+.f10-skeleton-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.25rem;
+}
+
+.f10-skeleton-card {
+  background: rgba(30, 41, 59, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  border-radius: 16px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.f10-skeleton {
+  background: linear-gradient(90deg, rgba(255,255,255,0.05) 25%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,0.05) 75%);
+  background-size: 200% 100%;
+  animation: f10-shimmer 1.5s infinite;
+  border-radius: 6px;
+}
+
+@keyframes f10-shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+.f10-skeleton-title {
+  height: 20px;
+  width: 40%;
+}
+
+.f10-skeleton-text {
+  height: 60px;
+  width: 100%;
+}
+
+.f10-skeleton-tool {
+  height: 50px;
+  width: 100%;
+  border-radius: 12px;
+  margin-top: auto;
+}
