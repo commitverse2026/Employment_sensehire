@@ -40,6 +40,10 @@ export default function App() {
         <Route path="/f09" element={<F09 />} />
         <Route path="/f10" element={<F10 />} />
         <Route path="/f11" element={<F11 />} />
+        <Route path="/candidate" element={<F11 />} />
+        <Route path="/candidate/login" element={<F11 />} />
+        <Route path="/candidate/dashboard" element={<F11 />} />
+        <Route path="/match/:jobId" element={<F11 />} />
         <Route path="/f12" element={<F12 />} />
         <Route path="/f13" element={<F13 />} />
         <Route path="/f14" element={<F14 />} />

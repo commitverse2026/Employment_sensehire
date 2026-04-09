@@ -39,6 +39,12 @@ app.post("/api/f03", (req, res) => {
 });
 
 // ======================
+// F11 ROUTES (Candidate Dashboard)
+// ======================
+const f11Routes = require("./routes/f11-routes")
+app.use('/api', f11Routes)
+
+// ======================
 // F15 ROUTES (Speech-to-Text Profile Builder)
 // ======================
 const f15Routes = require("./routes/f15-routes")
