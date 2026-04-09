@@ -22,6 +22,7 @@ app.get("/api/test", (req, res) => {
 app.use("/api/jobs", require("./routes/f04-routes"));
 app.use("/api/f05", require("./routes/f05-routes"));
 app.use("/api/f07", require("./routes/f07-routes"));
+app.use("/api", require("./routes/f06-routes"));
 // ======================
 // F01 ROUTE
 // ======================
