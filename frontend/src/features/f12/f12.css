@@ -1,0 +1,168 @@
+.f12-container {
+  padding: 30px;
+  font-family: "Segoe UI", sans-serif;
+  background: #0f172a; /* deep navy */
+  min-height: 100vh;
+  color: #e5e7eb;
+}
+
+/* Title */
+.title {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #f9fafb;
+}
+
+/* Controls */
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.dropdown {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #374151;
+  background: #1f2937;
+  color: #e5e7eb;
+  min-width: 220px;
+}
+
+.dropdown:focus {
+  outline: none;
+  border-color: #6366f1;
+}
+
+/* Button */
+.sort-btn {
+  padding: 10px 15px;
+  border: none;
+  background: #6366f1;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.sort-btn:hover {
+  background: #4f46e5;
+}
+
+/* Grid */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Card */
+.card {
+  background: #1e293b;
+  padding: 18px;
+  border-radius: 14px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  transition: 0.25s ease;
+  border: 1px solid #334155;
+}
+
+.card:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.6);
+}
+
+/* Header */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Name */
+.card h3 {
+  color: #f9fafb;
+}
+
+/* Score */
+.score {
+  font-weight: bold;
+  color: #818cf8;
+  font-size: 16px;
+}
+
+/* Role */
+.role {
+  font-weight: 500;
+  margin: 6px 0;
+  color: #cbd5f5;
+}
+
+/* Location */
+.location {
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+/* Badge */
+.badge {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* Badge colors (dark-friendly) */
+.badge.excellent {
+  background: #14532d;
+  color: #4ade80;
+}
+
+.badge.good {
+  background: #1e3a8a;
+  color: #60a5fa;
+}
+
+.badge.possible {
+  background: #78350f;
+  color: #facc15;
+}
+
+.badge.unlikely {
+  background: #7f1d1d;
+  color: #f87171;
+}
+
+/* Gap text */
+.gap {
+  font-size: 13px;
+  margin-top: 10px;
+  color: #9ca3af;
+}
+
+/* Button */
+.view-btn {
+  display: inline-block;
+  margin-top: 12px;
+  text-decoration: none;
+  color: white;
+  background: #111827;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  border: 1px solid #374151;
+  transition: 0.2s;
+}
+
+.view-btn:hover {
+  background: #1f2937;
+}
+
+/* Empty state */
+.empty {
+  text-align: center;
+  grid-column: 1 / -1;
+  color: #6b7280;
+}
