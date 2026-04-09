@@ -30,6 +30,8 @@ const f12Routes = require("./routes/f12-routes");
 app.use("/api/f12", f12Routes);
 const f11Routes = require("./routes/f11-routes");
 app.use("/api/f11", f11Routes);
+const f06Routes = require("./routes/f06-routes");
+app.use("/api/f06", f06Routes);
 // ======================
 // F01 ROUTE
 // ======================
