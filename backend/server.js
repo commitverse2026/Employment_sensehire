@@ -28,6 +28,12 @@ app.post("/api/onboarding", (req, res) => {
 });
 
 // ======================
+// F02 ROUTE (Disability Profile)
+// ======================
+const f02Routes = require("./routes/f02-routes");
+app.use("/api", f02Routes);
+
+// ======================
 // F03 ROUTE (Ability Input)
 // ======================
 app.post("/api/f03", (req, res) => {
@@ -37,6 +43,12 @@ app.post("/api/f03", (req, res) => {
     message: "F03 data received successfully",
   });
 });
+
+// ======================
+// F11 ROUTE (Candidate Dashboard)
+// ======================
+const f11Routes = require("./routes/f11-routes");
+app.use("/api", f11Routes);
 
 // ======================
 // START SERVER
