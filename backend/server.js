@@ -1,6 +1,5 @@
 const express = require("express");
 const cors = require("cors");
-
 const app = express();
 
 // ======================
@@ -20,6 +19,8 @@ app.get("/api/test", (req, res) => {
 // ROUTES
 // ======================
 app.use("/api/jobs", require("./routes/f04-routes"));
+app.use("/api/f05", require("./routes/f05-routes"));
+app.use("/api/f07", require("./routes/f07-routes"));
 
 // ======================
 // F01 ROUTE
@@ -29,9 +30,8 @@ app.post("/api/onboarding", (req, res) => {
   res.json({ message: "Onboarding data received" });
 });
 
-// F02 ROUTE (disability profiler )
+// F02 ROUTE (disability profiler)
 const { getDisabilityTypes, saveDisability } = require("./controllers/f02");
-
 app.get("/api/disability-types", getDisabilityTypes);
 app.post("/api/disability", saveDisability);
 
@@ -44,7 +44,7 @@ app.post("/api/f03", (req, res) => {
 });
 
 // ======================
-// ✅ F08 ROUTE (Compatibility Score)
+// F08 ROUTE (Compatibility Score)
 // ======================
 app.get("/api/compatibility/:candidateId/:jobId", (req, res) => {
   const score = Math.floor(Math.random() * 40) + 60;
@@ -52,7 +52,12 @@ app.get("/api/compatibility/:candidateId/:jobId", (req, res) => {
 });
 
 // ======================
-// F11 ROUTE
+// F10 ROUTE (AI Recommendations)
+// ======================
+app.use('/api/recommendations', require('./routes/f10-routes'));
+
+// ======================
+// F11 ROUTE (Candidate Dashboard)
 // ======================
 app.use("/api", require("./routes/f11-routes"));
 
@@ -66,7 +71,6 @@ app.get("/api/job-vectors", (req, res) => {
 // START SERVER
 // ======================
 const PORT = 5000;
-
 app.listen(PORT, () => {
   console.log(`🚀 Server running on http://localhost:${PORT}`);
 });
