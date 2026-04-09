@@ -1,0 +1,166 @@
+.f11-page {
+  min-height: 100vh;
+  padding: 32px 16px;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+.f11-panel {
+  max-width: 960px;
+  margin: 0 auto;
+  background: #111827;
+  border: 1px solid #1f2937;
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.f11-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.f11-subtitle {
+  color: #94a3b8;
+}
+
+.f11-form {
+  margin-top: 18px;
+  display: grid;
+  gap: 10px;
+}
+
+.f11-form input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #334155;
+  background: #0b1220;
+  color: #e2e8f0;
+}
+
+.f11-form button,
+.f11-logout {
+  width: fit-content;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: none;
+  background: #2563eb;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.f11-logout {
+  background: #334155;
+  height: fit-content;
+}
+
+.f11-card {
+  margin-top: 18px;
+  padding: 16px;
+  border-radius: 12px;
+  background: #0b1220;
+  border: 1px solid #1e293b;
+}
+
+.f11-progress {
+  margin-top: 10px;
+  height: 12px;
+  background: #1f2937;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.f11-progress-fill {
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+.f11-progress-good {
+  background: #22c55e;
+}
+
+.f11-progress-mid {
+  background: #f59e0b;
+}
+
+.f11-progress-low {
+  background: #ef4444;
+}
+
+.f11-best-fit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.f11-score-ring {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  border: 6px solid #22c55e;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+}
+
+.f11-jobs {
+  display: grid;
+  gap: 12px;
+}
+
+.f11-job-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid #1e293b;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.f11-job-meta {
+  display: grid;
+  justify-items: end;
+  gap: 6px;
+}
+
+.f11-tier {
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 999px;
+}
+
+.f11-tier-excellent {
+  background: #166534;
+}
+
+.f11-tier-good {
+  background: #1d4ed8;
+}
+
+.f11-tier-possible {
+  background: #92400e;
+}
+
+.f11-tier-unlikely {
+  background: #991b1b;
+}
+
+.f11-error {
+  color: #f87171;
+}
+
+@media (max-width: 640px) {
+  .f11-best-fit,
+  .f11-job-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .f11-job-meta {
+    justify-items: start;
+  }
+}
