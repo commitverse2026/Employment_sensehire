@@ -1,0 +1,167 @@
+.f11-login-wrap {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0f172a;
+}
+
+.f11-login-card {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 16px;
+  padding: 40px;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.f11-login-logo { font-size: 36px; text-align: center; }
+.f11-login-title { color: #f1f5f9; font-size: 24px; font-weight: 700; text-align: center; margin: 0; }
+.f11-login-sub { color: #64748b; text-align: center; margin: 0; }
+
+.f11-field { display: flex; flex-direction: column; gap: 6px; }
+.f11-field label { color: #94a3b8; font-size: 13px; font-weight: 500; }
+.f11-field input {
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  padding: 10px 14px;
+  color: #f1f5f9;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.f11-field input:focus { border-color: #6366f1; }
+
+.f11-error { color: #ef4444; font-size: 13px; margin: 0; }
+.f11-hint { color: #475569; font-size: 12px; text-align: center; margin: 0; }
+
+.f11-btn-primary {
+  background: #6366f1;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.f11-btn-primary:hover { background: #4f46e5; }
+.f11-btn-primary:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.f11-btn-secondary {
+  background: transparent;
+  color: #6366f1;
+  border: 1px solid #6366f1;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s;
+}
+.f11-btn-secondary:hover { background: #6366f1; color: white; }
+
+/* Dashboard */
+.f11-wrap { max-width: 900px; margin: 0 auto; padding: 24px 16px; }
+.f11-loading { color: #94a3b8; text-align: center; padding: 60px; }
+
+.f11-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.f11-dash-title { color: #f1f5f9; font-size: 22px; font-weight: 700; margin: 0; }
+.f11-logout {
+  background: transparent;
+  border: 1px solid #334155;
+  color: #94a3b8;
+  border-radius: 8px;
+  padding: 8px 14px;
+  cursor: pointer;
+  font-size: 13px;
+}
+.f11-logout:hover { border-color: #ef4444; color: #ef4444; }
+
+.f11-card {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 20px 24px;
+  margin-bottom: 20px;
+}
+
+.f11-section-label { color: #64748b; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; margin: 0 0 12px; }
+
+.f11-progress-track { background: #0f172a; border-radius: 999px; height: 10px; overflow: hidden; }
+.f11-progress-fill { height: 100%; border-radius: 999px; transition: width 0.6s ease; }
+.f11-progress-label { font-size: 13px; font-weight: 600; margin: 8px 0 0; }
+
+/* Hero */
+.f11-hero-card {
+  background: linear-gradient(135deg, #1e293b, #1e1b4b);
+  border: 1px solid #4f46e5;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 20px;
+}
+.f11-hero-badge { color: #a5b4fc; font-size: 12px; font-weight: 600; margin-bottom: 12px; }
+.f11-hero-body { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+.f11-hero-title { color: #f1f5f9; font-size: 20px; font-weight: 700; margin: 0 0 4px; }
+.f11-hero-company { color: #94a3b8; font-size: 14px; margin: 0 0 4px; }
+.f11-hero-location { color: #475569; font-size: 13px; margin: 0; }
+
+/* Ring */
+.f11-ring-wrap { position: relative; display: inline-flex; align-items: center; justify-content: center; }
+.f11-ring-label { position: absolute; font-size: 13px; font-weight: 700; }
+
+/* Job List */
+.f11-job-list { display: flex; flex-direction: column; gap: 12px; }
+.f11-job-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: #0f172a;
+  border: 1px solid #1e293b;
+  border-radius: 10px;
+  padding: 12px 16px;
+}
+.f11-job-rank { color: #475569; font-size: 13px; font-weight: 600; min-width: 28px; }
+.f11-job-info { flex: 1; }
+.f11-job-title { color: #f1f5f9; font-size: 14px; font-weight: 600; margin: 0 0 2px; }
+.f11-job-company { color: #64748b; font-size: 12px; margin: 0; }
+
+/* Badges */
+.f11-badge { font-size: 11px; font-weight: 600; padding: 3px 10px; border-radius: 999px; white-space: nowrap; }
+.f11-badge--green { background: #14532d; color: #86efac; }
+.f11-badge--blue { background: #1e3a5f; color: #93c5fd; }
+.f11-badge--amber { background: #451a03; color: #fcd34d; }
+.f11-badge--red { background: #450a0a; color: #fca5a5; }
+
+/* Detail View */
+.f11-back-btn { background: transparent; border: 1px solid #334155; color: #94a3b8; border-radius: 8px; padding: 8px 14px; cursor: pointer; font-size: 13px; }
+.f11-back-btn:hover { border-color: #6366f1; color: #6366f1; }
+.f11-detail-card { background: #1e293b; border: 1px solid #334155; border-radius: 12px; padding: 28px; }
+.f11-detail-title { color: #f1f5f9; font-size: 22px; font-weight: 700; margin: 0 0 4px; }
+.f11-detail-company { color: #94a3b8; font-size: 15px; margin: 0 0 20px; }
+.f11-detail-ring { display: flex; align-items: center; gap: 20px; margin-bottom: 20px; }
+.f11-detail-score-label { color: #64748b; font-size: 12px; margin: 0 0 6px; }
+.f11-detail-desc { color: #94a3b8; font-size: 14px; line-height: 1.6; margin-bottom: 20px; }
+.f11-detail-skills { margin-bottom: 24px; }
+.f11-skills-wrap { display: flex; flex-wrap: wrap; gap: 8px; }
+.f11-skill-tag { background: #1e3a5f; color: #93c5fd; font-size: 12px; padding: 4px 10px; border-radius: 999px; }
+
+.f11-gap-section { }
+.f11-gap-row { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
+.f11-gap-dim { color: #94a3b8; font-size: 12px; width: 110px; text-transform: capitalize; }
+.f11-gap-bar-wrap { flex: 1; background: #0f172a; border-radius: 999px; height: 8px; overflow: hidden; }
+.f11-gap-bar { height: 100%; border-radius: 999px; transition: width 0.4s; }
+.f11-gap-tag { font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 999px; white-space: nowrap; }
+.f11-gap-tag--green { background: #14532d; color: #86efac; }
+.f11-gap-tag--red { background: #450a0a; color: #fca5a5; }

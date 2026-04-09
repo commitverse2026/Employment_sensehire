@@ -33,5 +33,9 @@ router.post("/", (req, res) => {
     res.status(500).json({ error: "Server error" });
   }
 });
-
+router.get("/", (req, res) => {
+  const filePath = path.join(__dirname, "../data/jobs.json");
+  const data = fs.existsSync(filePath) ? JSON.parse(fs.readFileSync(filePath, "utf-8")) : [];
+  res.json(data);
+});
 module.exports = router; // 🔥 MUST EXPORT

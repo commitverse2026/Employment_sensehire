@@ -52,6 +52,17 @@ app.get("/api/compatibility/:candidateId/:jobId", (req, res) => {
 });
 
 // ======================
+// F11 ROUTE
+// ======================
+app.use("/api", require("./routes/f11-routes"));
+
+// Job Vectors
+app.get("/api/job-vectors", (req, res) => {
+  const data = require("./data/job-vectors.json");
+  res.json(data);
+});
+
+// ======================
 // START SERVER
 // ======================
 const PORT = 5000;
