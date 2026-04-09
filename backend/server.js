@@ -38,6 +38,12 @@ app.post("/api/onboarding", (req, res) => {
   res.json({ message: "Onboarding data received" });
 });
 
+// F02 ROUTE (disability profiler )
+const { getDisabilityTypes, saveDisability } = require("./controllers/f02");
+
+app.get("/api/disability-types", getDisabilityTypes);
+app.post("/api/disability", saveDisability);
+
 // ======================
 // F03 ROUTE
 // ======================
@@ -47,9 +53,22 @@ app.post("/api/f03", (req, res) => {
 });
 
 // ======================
+// ✅ F08 ROUTE (Compatibility Score)
+// ======================
+app.get("/api/compatibility/:candidateId/:jobId", (req, res) => {
+  const score = Math.floor(Math.random() * 40) + 60;
+  res.json({ score });
+});
+
+// ======================
+// F10 ROUTE (AI Recommendations)
+// ======================
+app.use('/api/recommendations', require('./routes/f10-routes'));
+
+// ======================
 // START SERVER
 // ======================
-const PORT = 5000;
+const PORT = 3001;
 
 app.listen(PORT, () => {
   console.log(`🚀 Server running on http://localhost:${PORT}`);
