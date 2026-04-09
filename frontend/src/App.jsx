@@ -30,6 +30,7 @@ export default function App() {
         )}
      
         <Route path="/f01" element={<F01 />} />
+        <Route path="/onboarding" element={<F01 />} />
         <Route path="/f02" element={<F02 />} />
         <Route path="/f03" element={<F03 />} />
         <Route path="/f04" element={<F04 />} />
