@@ -1,0 +1,330 @@
+.f14-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
+}
+
+.f14-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.f14-header h1 {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+.f14-header p {
+  color: #7f8c8d;
+  font-size: 1.1rem;
+}
+
+/* Text Input Section */
+.f14-input-section {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.f14-input-section h3 {
+  margin-top: 0;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.f14-textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  resize: vertical;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+}
+
+.f14-textarea:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.f14-input-controls {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Speed Section */
+.f14-speed-section {
+  background: #e8f4f8;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.f14-speed-section h3 {
+  margin-top: 0;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.f14-speed-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.f14-speed-btn {
+  padding: 0.75rem 1.5rem;
+  border: 2px solid #3498db;
+  background: white;
+  color: #3498db;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.f14-speed-btn:hover {
+  background: #3498db;
+  color: white;
+}
+
+.f14-speed-btn.active {
+  background: #3498db;
+  color: white;
+  box-shadow: 0 4px 8px rgba(52, 152, 219, 0.3);
+}
+
+.f14-speed-info {
+  color: #7f8c8d;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Page Section */
+.f14-page-section {
+  background: #fff3cd;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  border-left: 4px solid #ffc107;
+}
+
+.f14-page-section h3 {
+  margin-top: 0;
+  color: #856404;
+  margin-bottom: 1rem;
+}
+
+/* Floating Control Bar */
+.f14-floating-controls {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 1rem 2rem;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.f14-floating-content {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.f14-status {
+  font-size: 1.1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.f14-floating-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.f14-floating-btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+/* Buttons */
+.f14-btn {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.f14-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.f14-btn:active {
+  transform: translateY(0);
+}
+
+.f14-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.f14-btn-primary {
+  background: #3498db;
+  color: white;
+}
+
+.f14-btn-primary:hover:not(:disabled) {
+  background: #2980b9;
+}
+
+.f14-btn-secondary {
+  background: #95a5a6;
+  color: white;
+}
+
+.f14-btn-secondary:hover:not(:disabled) {
+  background: #7f8c8d;
+}
+
+.f14-btn-warning {
+  background: #f39c12;
+  color: white;
+}
+
+.f14-btn-warning:hover {
+  background: #e67e22;
+}
+
+.f14-btn-danger {
+  background: #e74c3c;
+  color: white;
+}
+
+.f14-btn-danger:hover {
+  background: #c0392b;
+}
+
+/* Info Section */
+.f14-info {
+  background: #ecf0f1;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 2rem 0;
+}
+
+.f14-info h3 {
+  color: #2c3e50;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.f14-info ol,
+.f14-info ul {
+  margin-left: 1.5rem;
+  color: #34495e;
+  line-height: 1.8;
+}
+
+/* Demo Section */
+.f14-demo {
+  background: #d4edda;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #28a745;
+  margin-top: 2rem;
+}
+
+.f14-demo h3 {
+  color: #155724;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.f14-demo p {
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* Error */
+.f14-error {
+  background: #f8d7da;
+  color: #721c24;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid #f5c6cb;
+}
+
+.f14-error h2 {
+  margin-top: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .f14-container {
+    padding: 1rem;
+  }
+
+  .f14-floating-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .f14-floating-buttons {
+    justify-content: center;
+  }
+
+  .f14-btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .f14-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .f14-speed-buttons {
+    justify-content: center;
+  }
+}

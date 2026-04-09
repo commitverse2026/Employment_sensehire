@@ -1,0 +1,156 @@
+/* Container */
+.f01-container {
+  max-width: 520px;
+  margin: 60px auto;
+  padding: 30px;
+  background: linear-gradient(145deg, #0f172a, #020617);
+  border-radius: 18px;
+  border: 1px solid #1e293b;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+}
+
+/* Step */
+.step {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Title */
+.step h2 {
+  color: #e2e8f0;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* Input */
+.step input {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #334155;
+  background: #020617;
+  color: #e2e8f0;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.step input:focus {
+  border-color: #22c55e;
+  box-shadow: 0 0 0 2px rgba(34, 197, 94, 0.2);
+}
+
+/* Buttons container */
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+/* Buttons */
+.step button {
+  flex: 1;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* Primary */
+.step button:last-child {
+  background: linear-gradient(135deg, #22c55e, #4ade80);
+  color: black;
+}
+
+.step button:last-child:hover {
+  transform: translateY(-1px);
+}
+
+/* Secondary */
+.step button:first-child {
+  background: #1e293b;
+  color: #cbd5f5;
+}
+
+.step button:first-child:hover {
+  background: #334155;
+}
+
+/* Tags */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* Tag chip */
+.tags span {
+  background: rgba(34, 197, 94, 0.15);
+  color: #4ade80;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.tags span:hover {
+  background: rgba(34, 197, 94, 0.3);
+}
+
+/* Add button */
+.add-btn {
+  background: #22c55e !important;
+  color: black !important;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+}
+/* Page */
+.page {
+  text-align: center;
+  color: white;
+}
+
+/* Header */
+.header {
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(34, 197, 94, 0.15);
+  color: #4ade80;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.title span {
+  color: #22c55e;
+}
+
+.subtitle {
+  color: #94a3b8;
+  margin-top: 10px;
+}
+
+/* Success */
+.success {
+  font-size: 20px;
+  color: #4ade80;
+}
+
+/* Page background (IMPORTANT) */
+body {
+  background: radial-gradient(circle at top, #020617, #000);
+  font-family: 'Segoe UI', sans-serif;
+}
