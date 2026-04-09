@@ -57,6 +57,7 @@ app.get("/api/compatibility/:candidateId/:jobId", (req, res) => {
 // ======================
 app.use('/api/recommendations', require('./routes/f10-routes'));
 app.use("/api", require("./routes/f12-routes"));
+app.use("/api", require("./routes/f11-routes"));
 
 // ======================
 // START SERVER
