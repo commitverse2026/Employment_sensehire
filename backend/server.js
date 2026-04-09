@@ -56,6 +56,7 @@ app.get("/api/compatibility/:candidateId/:jobId", (req, res) => {
 // F10 ROUTE (AI Recommendations)
 // ======================
 app.use('/api/recommendations', require('./routes/f10-routes'));
+app.use("/api", require("./routes/f12-routes"));
 
 // ======================
 // START SERVER
