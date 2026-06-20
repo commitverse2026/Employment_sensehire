@@ -1,0 +1,115 @@
+const synth = window.speechSynthesis;
+let voices = [];
+
+let utterance = null;
+let fullText = "";
+let currentCharIndex = 0;
+let isPaused = false;
+
+
+/* ---------- LOAD VOICES ---------- */
+
+function loadVoices() {
+    voices = synth.getVoices();
+
+    const select = document.getElementById('voiceSelect');
+    if (!select) return;
+
+    select.innerHTML = '<option value="-1">Default</option>';
+
+    voices.forEach((voice, i) => {
+        select.appendChild(new Option(voice.name, i));
+    });
+}
+
+speechSynthesis.onvoiceschanged = loadVoices;
+loadVoices();
+
+
+/* ---------- PLAY ---------- */
+
+document.getElementById('playbutton').addEventListener('click', (e) => {
+    e.preventDefault();
+
+    const text = document.querySelector('textarea').value.trim();
+    if (!text) return alert('Enter text!');
+
+    synth.cancel();
+
+    fullText = text;
+    currentCharIndex = 0;
+
+    speakFrom(currentCharIndex);
+});
+
+
+/* ---------- SPEAK FUNCTION ---------- */
+
+function speakFrom(index) {
+
+    utterance = new SpeechSynthesisUtterance(fullText.substring(index));
+
+    utterance.rate = parseFloat(document.getElementById('speedSlider').value);
+    utterance.pitch = 1;
+    utterance.volume = 1;
+
+    const voiceIndex = document.getElementById('voiceSelect').value;
+    if (voices[voiceIndex]) {
+        utterance.voice = voices[voiceIndex];
+    }
+
+    // 🔥 Track progress
+    utterance.onboundary = (event) => {
+        if (event.name === "word") {
+            currentCharIndex = index + event.charIndex;
+        }
+    };
+
+    utterance.onend = () => {
+        isPaused = false;
+        currentCharIndex = 0;
+        document.getElementById('pausebutton').textContent = '⏸️ Pause';
+    };
+
+    synth.speak(utterance);
+}
+
+
+/* ---------- PAUSE / RESUME ---------- */
+
+document.getElementById('pausebutton').addEventListener('click', (e) => {
+    e.preventDefault();
+
+    // Nothing speaking
+    if (!synth.speaking && !isPaused) return;
+
+    if (!isPaused) {
+
+        // STOP instead of pause
+        synth.cancel();
+
+        isPaused = true;
+        e.target.textContent = '▶️ Resume';
+
+    } else {
+
+        speakFrom(currentCharIndex);
+
+        isPaused = false;
+        e.target.textContent = '⏸️ Pause';
+    }
+});
+
+
+/* ---------- STOP ---------- */
+
+document.getElementById('stopbutton').addEventListener('click', (e) => {
+    e.preventDefault();
+
+    synth.cancel();
+
+    currentCharIndex = 0;
+    isPaused = false;
+
+    document.getElementById('pausebutton').textContent = '⏸️ Pause';
+});
